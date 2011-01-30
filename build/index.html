@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mike West is a web developer in Munich.</title>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <!--
+      Mike West's exciting vCard microsite!  It's like a business card, but 
+      online!  Amazing!
+
+      *   vCard icon taken from the [Microformats icons page][1], created by
+          [Chris Messina][2]
+
+      *   Other icons from Paul Robert Lloyd's excellent [Social Media Icons][3]
+          collection.  It's awesome, thanks!
+
+      [1]: http://microformats.org/wiki/icons 
+      [2]: http://factoryjoe.com/blog
+      [3]: http://paulrobertlloyd.com/2009/06/social_media_icons
+      
+    -->
+    <style>
+      html {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAgMAAABjUWAiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAACVBMVEVGSk5HS09ITFA1pdUuAAACN0lEQVQoU02SwW6iUBiF/2nUTLtSI6aw0kkxxafQSTHiCgzecFmB8RIvT2EnA1FXYLxEWGHDJcJTttPOovtzcr4vOYCwUWT2/m+/U7gOGEV8tEL+wmLVz6G1ZKji/RDppTeAJhUIkzR+20/dNtzZ+Ep62OWV6e1gI14clGQbrm+3DqwtEuQBQWWiRDqgKHYDsjUE3aomcFD2XEX0jBAa53CS5nfXW9Z5HlweJlDKbIbSBhvIPGuDUc/rELduTyPD0oFoZfljRXSL0rT9wULLxaoVhpekM4H/lb6hJpIOcvnas/GXSQ6OYjPSbBBelsyB8TBjmdhap/uHkQ6mXTfIQX2Vs+gAYJbIesNxj538aRsuWLdMmgS+V69y+JdHmMWfZtCfu6Lygjm7VNiBqTy/p15wNkiY5LBa0MYh+9oB+JylErWXxw+yVIuJ0Qv4/qTIE1D7iUmf1smwMmQHyNKg22t39Jvz9QCmIqUVt2cZOr/t4Gq+FFnU2KHZRXHANzXcQ3UoC9sqB8oTPgbEp27MBnALfbTdiEdv8JzqwFxEiCBE2qr5K4fRXZyhG8W7hcgi+BSrHzH1x7YDLe9R4GWqmJIkOWDyM3tLw9PY4x5A98/9rvBYLSGnuwP67QYOrNQ6n1lnq4urnxEMDVFkzcXGPw2LNhBylNOOhkdF50mHcort5ty9t+vNSQctrQLE/IOn+uUE/MOtrEe0VlEafvhp9DW51nyZhl4E38DWOsw126OdyBR8MtPfARp5+bJpgfetAAAAAElFTkSuQmCC");
+        height:     100%;
+        width:      100%;
+      }
+      body {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        -moz-box-pack: center;
+        -moz-box-align: center;
+
+        box-align:  center;
+        box-orient: vertical;
+        box-pack:   center;
+        display:    box;
+        height:     100%;
+        margin:     0;
+        padding:    0;
+        width:      100%;
+      }
+      .vcard {
+        background:   #DDD;
+        border-color: #FFF #DDD #DDD #FFF;
+        border:       1px solid #FFF;
+        box-shadow:   3px 3px 5px rgba( 0, 0, 0, 0.5 );
+        height:       246px;
+        padding:      20px;
+        position:     relative;
+        width:        460px;
+      }
+        h1 {
+          font:         45px/1 Baskerville, Times, 'Times New Roman', serif;
+          margin:       0;
+          padding:      0;
+          text-shadow:  #EEE 0 1px 0;
+        }
+        p {
+          bottom:       0;
+          font:         15px/1.25 "Droid Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+          position:     absolute;
+          right:        5px;
+        }
+          p .aural {
+            left:     -999em;
+            position: absolute;
+          }
+          p a {
+            background:       #DDD -20px center no-repeat;
+            border-radius:    20px;
+            border:           1px solid #DDD;
+            color:            #000;
+            display:          block;
+            padding:          1px 10px 1px 30px;
+            position:         relative;
+            text-align:       right;
+            text-decoration:  none;
+
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+          }
+            p a:hover, p a:focus {
+              background-color:     #B9BEC4;
+              background-position:  8px center;
+              border-color:         #9AA;
+              color:                #000;
+              outline:              none;
+            }
+              .url {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABR1BMVEWv7vuq6fij5/im5PaS6PmL4PWM4PaY2vKJ3feY0/CF2PKD1fOB0/aTzu5/0e9+0O5/0O57zPJ5yPRwvvJxvuVwvuVwveaBt+Vrt+1qteJos/Bms+NlsuJmsuJjrOtjrd1jrN9fqe9eqNxepeVcpdlbo+pZotxXn+1XoNhZn+Bml9lSm9lVmOxUmNtTkutPlOtSldFRlNJRlNFQk9NMk9VQktNSjepNj9lMjthGiupQiOVKidBKhtlGhtZDheRGhchJftk9f8pAfcNGe8hAfcQ/esc7dsw2d8YydMg0brkzbbo0bL0xa7w0asAtabw5YbQtZbUqY7ctX7IrYLAmYbgsYLApX7AqXLYkW7MyV6goWawmWaooWK0kWKshVawiUqUiUKkeUKYgS6EbSqAaRZoYRJoARLsVPpQUOY8TOY4QM4gNLYL////g22gLAAAAbXRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+///////8Aab2hMgAAAOFJREFUGBkFwc1KAlEYgOH3jJ/fHIYZCUppI1pIEbTQRQtX0d7bcNcddSVtW0dEpFBQSDGUiyLPjPOXYz2PXFYAAACoVFdW0s4uPNWAmQqmuz5+2OvOjHZwJcJFnM7/nuMs3K96ukGwR/nZ/SKl+RVEmiNEjHF+jZyXfhohKNxkRhhd9+grQuPVOQXCSexHhRXesw8D9CMO+LEIc2m3PnMytwPh3VjwCU5PHpfF7eAQWyAo6nmj5Yy3ASsPodlwSYvUQmmTNoIX8GvWSQDb7coh2Jri+wVgUW0sokOAIQCA/gNyDU00cFPxhgAAAABJRU5ErkJggg==");
+              }
+              .email {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAYFBMVEX+/v79/f38/Pz7+/v6+vr5+fn29vb09PTx8fHw8PDu7u7q6urn5+fm5ubl5eXk5OTj4+Ph4eHg4ODe3t7d3d3a2trX19fW1tbV1dXU1NTT09PMzMy7u7uqqqqZmZn///+jroguAAAAIHRSTlP///////////////////////////////////////+/AKwlVOgAAACISURBVHjaZc/ZDoMwDETRlC3OQgmhQFkm/P9fMkgVbdT7YNnnzepIWYdKj6ykkmp+UoSt+N7FRhDcUkAITUv53G1D0GZAqVmJwWiCiJtQiVSYnAjBWtvPqGvMPVeCY/sCLLtjBO895M0EXAkhQEJc1xgEIVwAE2McRw6DCzr7urMd4ZmV/t4/Ae2FELV4xvz6AAAAAElFTkSuQmCC");
+              }
+              .skype {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAA81BMVEX+/v7x+Pzj8/zj9Pzi8fnV7fjT7frT6/jR6/rT6vfJ6vrI5/a95/vC5fm34few4/qt3/e12/Kv2/Kq2fOk2fae2Paf1/Om1PCm1e+g1fCZ1veX1Pad0+9u0vpey/llw/JmwvBsv+hPxfdiu+tYuvA7wPg+vfZUt+hQt+s5vfU3vfY4u/NTsuYyufVCte02t/BJseg3svAutfRNquEtsvFBruZEreIqsvIvsPE6ru4yr+kpr+8vrukwq+YlrvE5puErqughq/ArqOwspOAcp+4mn+EXo+0enuoan+oWn+shnd4Tn+wOnOoYmuAKmOkLbrj///8kTHAWAAAAUXRSTlP/////////////////////////////////////////////////////////////////////////////////////////////////////////vwCYlefEAAAAsElEQVR42mXP1xbBUBSE4dF77z1IlBA1RA0hjhIc7/809sqVLP/dfHeDD3f0Aa854uB1abA/b8bjvkTVCVpyN4J0s7ncybLcIugoPtiVjorSIZjNaCQWvSiqqqoSaFoS3m04/wBGmkag6wJch0nODQi6TmAYDcCTGa4CaBsGgWlOEbrE/a8QiqZJwBgrIzWfFwAwRmBRFdgFLYvg/qROophFbP28E9zeP90Iro743/0vDccxeiTnK24AAAAASUVORK5CYII=");
+              }
+              .twitter {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAhFBMVEX////z+fvy+fvk8fbD4u6t1uWc0+afzuB+0embydyTyN2PxdpvyuSLwNdgwd9Mvd5RudpIuNpQs9RQsNJFtNdBsNNRqcs9q9A5p8w8pstAocZCocY1o8lBn8QxnsYtmsI2lb0ylb0ulb0plb8mkbskj7kijbghjLcoi7UZg7AARHf///+SHDpuAAAALHRSTlP///////////////////////////////////////////////////////+/ADevRokAAACFSURBVBgZBcE5TgNREAXA6v5vjBgEgZ2ZgCXl/neBhBOwSCALGTH6VNXTBACV+QoAHiPDOLxvwCa6nT4uVmCKHs7O93grUyzgBVerRetuwKm7RQHYFSLgOAcQTU2fd+VrIIrx5+eZ6z1akn2D7yTarLq5XQbWqilmc/kA2MT8BQCpFQDUPzkYHf4iXVbCAAAAAElFTkSuQmCC");
+              }
+              .us {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABXklEQVR42qWTsWrCUBiFUyhYSMUXcHEPxEF8AgdXIbPQIZC6uuUNxDVZW3yFphQpGSottEk7WKQOdgkiVDBSGpcElNP7S26ENq0BAx8nwznn5if/FQRBODoQ4ZhxwhAZpxkR4wxlhcJotISuP+I/nen6LyhLBaV2+x7LZQjHmf+pP5/1ek0FJSqQHGcG255iMvmEYbym6twwEr5sG++tFhVIVCA3m9eYTgN0Oi8Yj/1UpRM5m80GQRBQgUwF5X7/DaY5xHA4ZzM/pKrHZuZ8mCaeGw0qKG8LarXLrUnTbNA4aRqGYUIURfA8b1fQ691BVW8xGHhQlKtUHStKwkRVcVOt7gpc18VqtdrOlQXyUiYpuCgW4VYqeJKkTJCXMrxAtiwLvu9jsVhkgryU4X9B6uRy6Obz6IpiNpiXMnwPaJvqjDOGxjjfgxZ763wTC/GLFH9SeQ9y7C3xu3DQbfwGpj/jo8J7E0QAAAAASUVORK5CYII=");
+              }
+              .de {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAhFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeXl5qampzc3N6enqJiYmUlJSpiQeqqqqriwuriw2zkhC8vLy+nhzJycnKqinWNjbgRETqUVHrwRrswx/vyCzwyjTyzkDz0kz2VFT3ZWX4aGj5fX36enr7lZXEs+z8AAAADnRSTlMBBAgLDA8hLC8wSGFoafMT7IEAAABYSURBVBhXjc8hEoAwDETR7MwOhhruf0M0IJjSjyspGOL+i9qI10mSegF2Se+IzWJOvcuinb0nZFHpUJG1lAe0rQ5aAuIPtAwtzAiYeiS4MMczBsDUET5rbzvsPPDx+QmjAAAAAElFTkSuQmCC");
+              }
+    </style>
+  </head>
+  <body>
+    <section class="vcard">
+      <h1 class="fn">Mike West</h1>
+      <p>
+        <span class="aural">Visit my website at</span>
+        <a href="http://mikewest.org/" class="url" rel="me">http://mikewest.org/</a>
+        <span class="aural">, or drop me an email.  My address is</span>
+        <a href="mailto:mike@mikewest.org" class="email">mike@mikewest.org</a>
+        <span class="aural">, I'm </span>
+        <a href="http://twitter.com/mikewest" class="twitter url" rel="me">@mikewest</a>
+        <span class="aural">on Twitter, and usually on Skype as</span>
+        <a href="skype:mikewest.org?add" class="skype url">mikewest.org</a>
+        <span class="aural">.  If you prefer phones (really?), leave me some voicemail at either</span>
+        <a href="tel:+498923515676" class="tel de">+49 89 2351 5676</a>
+        <span class="aural">or</span>
+        <a href="tel:+16502651553" class="tel us">+1 650 265 1553</a>
+      </p>
+    </section>
+  </body>
+</html>

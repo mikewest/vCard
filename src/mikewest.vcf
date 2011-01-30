@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+N:West TEMP;Mike
+FN:Mike West TEMP
+ORG:Google
+TITLE:Developer Advocate
+TEL;TYPE=MSG,PREF:+49 89 2351 5676
+TEL;TYPE=MSG:+1 650 265 1553
+TEL;TYPE=WORK,VOICE,MSG:+49 162 10 255 91
+ADR;TYPE=WORK:;;Dienerstrasse 12;München;;80331;Germany
+EMAIL;TYPE=HOME,PREF,INTERNET:mike@mikewest.org
+EMAIL;TYPE=WORK,INTERNET:mkwst@google.com
+X-SKYPE;TYPE=PREF,HOME:mikewest.org
+X-JABBER;TYPE=WORK,PREF:mkwst@google.com
+URL:http://mikewest.org/
+REV:2011-01-30
+END:VCARD
