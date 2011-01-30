@@ -55,6 +55,21 @@
         position:     relative;
         width:        460px;
       }
+        .vcard > a {
+          -webkit-transition: all 400ms ease;
+          -moz-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+
+          display:  block;
+          opacity:  0.5;
+          position: absolute;
+          right:    20px;
+          top:      20px;
+          transition: all 400ms ease;
+        }
+          .vcard > a:hover, .vcard > a:focus {
+            opacity:  1;
+          }
         h1 {
           font:         45px/1 Baskerville, Times, 'Times New Roman', serif;
           margin:       0;
@@ -131,6 +146,7 @@
         <span class="aural">or</span>
         <a href="tel:+16502651553" class="tel us">+1 650 265 1553</a>
       </p>
+      <a href="mikewest.vcf"><img src="vcard.png" alt="Download Mike's contact details as a vCard."></a>
     </section>
   </body>
 </html>
