@@ -46,10 +46,14 @@
         width:      100%;
       }
       .vcard {
+        -moz-box-shadow:   3px 3px 5px rgba( 0, 0, 0, 0.5 );
+
         background:   #DDD;
         border-color: #FFF #DDD #DDD #FFF;
         border:       1px solid #FFF;
         box-shadow:   3px 3px 5px rgba( 0, 0, 0, 0.5 );
+        display:      block;
+        overflow:     hidden;
         height:       246px;
         padding:      20px;
         position:     relative;
@@ -67,6 +71,9 @@
           top:      20px;
           transition: all 400ms ease;
         }
+          .vcard > a > img {
+            border: none;
+          }
           .vcard > a:hover, .vcard > a:focus {
             opacity:  1;
           }
